@@ -188,5 +188,60 @@
 		},
 		"version": "1.0.0",
 		"category": "system-components"
+	},
+	"subway": {
+		"title": "NYC Subway Arrivals",
+		"published": true,
+		"createdAt": "2026-01-11T00:00:00Z",
+		"updatedAt": "2026-01-11T00:00:00Z",
+		"description": "Real-time subway arrivals from MTA GTFS feed. Shows 4 A trains and 4 C trains in a split layout.",
+		"componentPath": "./screens/subway",
+		"hasDataFetch": true,
+		"props": {
+			"stationName": "Utica Ave",
+			"direction": "Manhattan",
+			"arrivals": [],
+			"aTrains": [],
+			"cTrains": [],
+			"currentTime": "--:--",
+			"currentDate": "---"
+		},
+		"params": {
+			"stopId": {
+				"type": "string",
+				"label": "Stop ID",
+				"description": "MTA GTFS stop ID (e.g., 'A42N' for Utica Ave Northbound). See MTA GTFS documentation for other stops.",
+				"default": "A42N",
+				"placeholder": "A42N"
+			},
+			"stationName": {
+				"type": "string",
+				"label": "Station Name",
+				"description": "Display name for the station",
+				"default": "Utica Ave",
+				"placeholder": "Utica Ave"
+			},
+			"direction": {
+				"type": "string",
+				"label": "Direction",
+				"description": "Destination direction to display",
+				"default": "Manhattan",
+				"placeholder": "Manhattan"
+			},
+			"maxTrains": {
+				"type": "number",
+				"label": "Max Trains Per Line",
+				"description": "Maximum number of trains per line (A and C separately)",
+				"default": 4
+			}
+		},
+		"tags": ["transit", "subway", "mta", "api", "live-data", "configurable"],
+		"author": {
+			"name": "Zack Bart",
+			"github": ""
+		},
+		"renderSettings": {},
+		"version": "1.1.0",
+		"category": "display-components"
 	}
 }

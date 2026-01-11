@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
 	trailingSlash: false,
 	skipTrailingSlashRedirect: true,
 	cacheComponents: true,
-	output: "standalone",
 	// Mark native modules as external for server components
 	serverExternalPackages: [
 		"@takumi-rs/core",

@@ -1,8 +1,4 @@
-import {
-	createSession,
-	destroySession,
-	validateCredentials,
-} from "@/lib/auth";
+import { createSession, destroySession, validateCredentials } from "@/lib/auth";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
